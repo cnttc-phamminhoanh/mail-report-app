@@ -3,7 +3,6 @@ const { execute } = require('../jobs/daily-report.job');
 
 (async () => {
   try {
-    console.log('TEST DEPLOY')
     console.log(`[${new Date().toISOString()}] [JOB] Daily report started`)
 
     await execute()
