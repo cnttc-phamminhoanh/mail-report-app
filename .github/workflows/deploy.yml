@@ -27,6 +27,9 @@ jobs:
           echo "=== Update To Latest Version ==="
           git reset --hard origin/master
 
+          echo "=== Grant execute permissions to the file ==="
+          chmod +x src/scripts/*.sh
+
           echo "=== Install Dependencies ==="
           /home/it/.nvm/versions/node/v22.18.0/bin/npm install
 
