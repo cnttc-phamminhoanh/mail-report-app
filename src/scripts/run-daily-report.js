@@ -11,7 +11,7 @@ const { execute } = require('../jobs/daily-report.job');
     process.exit(0)
 
   } catch (err) {
-    console.error('[JOB] Failed:', err)
+    console.error(`[${new Date().toISOString()}] [JOB] Failed:`, err)
     process.exit(1)
   }
 })()
