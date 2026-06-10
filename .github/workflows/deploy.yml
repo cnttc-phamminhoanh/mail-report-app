@@ -7,29 +7,27 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.2.0
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          script: |
-            set -e
+      - name: Deploy mail-report-app
+        run: |
+          set -e
 
-            echo "=== Start Deploy ==="
+          echo "=== Start Deploy ==="
 
-            cd /home/it/mail-report-app
+          cd /home/it/mail-report-app
 
-            echo "=== Fetch Latest Code ==="
-            git fetch origin
+          echo "=== Current Branch ==="
+          git branch
 
-            echo "=== Reset To Remote Branch ==="
-            git reset --hard origin/master
+          echo "=== Fetch Latest Code ==="
+          git fetch origin
 
-            echo "=== Install Dependencies ==="
-            /home/it/.nvm/versions/node/v22.18.0/bin/npm install
+          echo "=== Update To Latest Version ==="
+          git reset --hard origin/master
 
-            echo "=== Deployment Completed ==="
+          echo "=== Install Dependencies ==="
+          /home/it/.nvm/versions/node/v22.18.0/bin/npm install
+
+          echo "=== Deploy Completed ==="
