@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/scripts/run-daily-report.js >> logs/cron.log 2>&1",
-    "daily-report": "node src/scripts/run-daily-report.js"
+    "dev": "node src/scripts/run-daily-report.js >> logs/cron.log 2>&1"
   },
   "keywords": [],
   "author": "",
