@@ -3,11 +3,11 @@ const { execute } = require('../jobs/daily-report.job');
 
 (async () => {
   try {
-    console.log('[JOB] Daily report started')
+    console.log(`[${new Date().toISOString()}] [JOB] Daily report started`)
 
     await execute()
 
-    console.log('[JOB] Completed successfully')
+    console.log(`[${new Date().toISOString()}] [JOB] Completed successfully`)
     process.exit(0)
 
   } catch (err) {
