@@ -15,7 +15,7 @@ async function execute() {
 
   await fs.unlink(filePath)
 
-  console.log('Report sent successfully.')
+  console.log(`[${new Date().toISOString()}] Report sent successfully`)
 }
 
 module.exports = {

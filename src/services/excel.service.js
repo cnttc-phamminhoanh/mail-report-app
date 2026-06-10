@@ -41,11 +41,11 @@ async function generateExcel(data, filePath) {
   // ===== Table Header =====
   const headerRowNumber = 5
 
-  // Tạo 1 dòng trống để header nằm ở dòng 5
+  // Create a blank line so the header is on line 5.
   sheet.addRow([])
   sheet.addRow([])
 
-  // Tạo header thủ công
+  // Create header
   sheet.getRow(headerRowNumber).values = [
     'Date',
     'Type',
@@ -60,7 +60,7 @@ async function generateExcel(data, filePath) {
     'Shipment Type',
   ]
 
-  // Set width cột
+  // Set width column
   sheet.columns = [
     { key: 'Date', width: 13 },
     { key: 'Type', width: 20 },
@@ -125,10 +125,10 @@ async function generateExcel(data, filePath) {
         bottom: { style: 'thin' },
         right: { style: 'thin' },
       }
-    })
+    });
 
-    // Format tiền
-    ;[5, 6, 7].forEach((col) => {
+    // Format money
+    [5, 6, 7].forEach((col) => {
       row.getCell(col).numFmt = '#,##0.00'
     })
 
