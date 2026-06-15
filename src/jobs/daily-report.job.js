@@ -10,12 +10,12 @@ async function execute() {
   const filePath = path.join(__dirname, '../../excel_reports/GI Sales Shpt Amt vs CUSDEC Amt Discrepencies.xlsx')
 
   await generateExcel(data, filePath)
+  console.log(`[${new Date().toISOString()}] [REPORT] Excel generated`)
 
   await sendMail(filePath)
+  console.log(`[${new Date().toISOString()}] [MAIL] Report sent successfully`)
 
   await fs.unlink(filePath)
-
-  console.log(`[${new Date().toISOString()}] Report sent successfully`)
 }
 
 module.exports = {
