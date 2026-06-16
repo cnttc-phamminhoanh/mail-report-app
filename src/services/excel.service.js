@@ -1,8 +1,14 @@
 const ExcelJS = require("exceljs");
 
-async function generateExcel(data, filePath) {
+async function generateExcel(data, filePath, options = {}) {
+  const {
+    companyName = "GERMTON VIETNAM",
+    reportTitle = "Report",
+    sheetName = "Report"
+  } = options
+
   const workbook = new ExcelJS.Workbook();
-  const sheet = workbook.addWorksheet("CUSDEC Report");
+  const sheet = workbook.addWorksheet(sheetName);
 
   const headerRowNumber = 5;
 
@@ -19,10 +25,8 @@ async function generateExcel(data, filePath) {
     let column = "";
 
     while (num > 0) {
-      const remainder = (num - 1) % 26;
-
-      column = String.fromCharCode(65 + remainder) + column;
-
+      const remainder = (num - 1) % 26
+      column = String.fromCharCode(65 + remainder) + column
       num = Math.floor((num - 1) / 26);
     }
 
@@ -33,10 +37,10 @@ async function generateExcel(data, filePath) {
 
   // ===== Report Title =====
   sheet.mergeCells(`A1:${lastColumn}1`);
-  sheet.getCell("A1").value = "GERMTON VIETNAM";
+  sheet.getCell("A1").value = companyName;
 
   sheet.mergeCells(`A2:${lastColumn}2`);
-  sheet.getCell("A2").value = "GI Sales Shpt Amt vs CUSDEC Amt Discrepencies";
+  sheet.getCell("A2").value = reportTitle;
 
   sheet.mergeCells(`A3:${lastColumn}3`);
   sheet.getCell("A3").value = `Generated At: ${new Date().toLocaleString("sv-SE")}`;

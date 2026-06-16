@@ -1,14 +1,15 @@
 const { getPool } = require('./sql.service')
-const query = require('../reports/gi-sales-shpt.report')
 
-async function getReportData() {
+async function executeQuery(query) {
   const pool = await getPool()
 
-  const result = await pool.request().query(query)
+  const result = await pool
+    .request()
+    .query(query)
 
   return result.recordset
 }
 
 module.exports = {
-  getReportData,
+  executeQuery,
 }
