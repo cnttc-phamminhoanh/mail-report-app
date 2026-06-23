@@ -1,4 +1,4 @@
-const query = require("../reports/gi-sales-shpt.report")
+const query = require("../reports/sal_shpt_cus_dis.report")
 const { run } = require("../services/report-runner.service");
 
 async function execute() {
@@ -6,7 +6,7 @@ async function execute() {
     query,
     reportTitle: "GI Sales Shpt Amt vs CUSDEC Amt Discrepencies",
     sheetName: "CUSDEC Report",
-    mailTo: process.env.MAIL_TO,
+    mailTo: process.env.SAL_SHPT_CUS_DIS_MAIL_TO,
   });
 }
 

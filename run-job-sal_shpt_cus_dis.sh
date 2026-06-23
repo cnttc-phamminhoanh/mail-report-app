@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Thời gian chạy: 03:00 AM - <tên job>
+
 cd /home/it/mail-report-app
 
 mkdir -p excel_reports
