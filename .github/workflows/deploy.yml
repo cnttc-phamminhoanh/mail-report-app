@@ -31,6 +31,7 @@ jobs:
           chmod +x run-job-sal_shpt_cus_dis.sh
 
           chmod +x run-job-new_1.sh
+          chmod +x run_job_sum_exp_mon_rep.sh
           chmod +x mrp_m1_m3_crd.sh
           
 
