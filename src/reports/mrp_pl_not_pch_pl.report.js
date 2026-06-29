@@ -72,13 +72,7 @@ LEFT JOIN [erp_t8_gi].[dbo].bas_goods bg
     ON bg.goods_no = m2.goods_no
 LEFT JOIN [erp_t8_gi].[dbo].mrp_mrp1 m1 
     ON m1.sheet_no = m2.sheet_no
-
-WHERE 
-    (m2.pur_plan_qty = 0 OR m2.pur_plan_qty IS NULL)
-    AND m2.close_sw = 0
-    AND m2.need_plan_date >= DATEADD(DAY, -15, GETDATE())
-    AND m2.need_plan_date <= GETDATE()
-
-ORDER BY m2.need_plan_date DESC, m2.sheet_no
+left join pur_plan2 p with(nolock) on p.mrp_no = m2.sheet_no and p.goods_no = m2.goods_no and m2.sheet_id = p.mrp_id
+where p.sheet_no is null  and m2.close_sw = 0 and m2.need_plan_qty > 0 and left(m2.goods_no, 1) = 'M'
 
 `

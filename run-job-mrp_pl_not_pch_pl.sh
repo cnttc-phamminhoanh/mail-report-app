@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Thời gian chạy: 03:00 AM - <mrp_pl_not_ch_pl>
+# Thời gian chạy: 03:00 AM - <mrp_pl_not_pch_pl>
 
 cd /home/it/mail-report-app
 
