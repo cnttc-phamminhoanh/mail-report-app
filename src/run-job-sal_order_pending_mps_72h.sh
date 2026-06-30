@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Thời gian chạy: 03:00 AM - sal_order_pending_mps_72h
+# note: 3:10 HKO PMC
 
 cd /home/it/mail-report-app
 
