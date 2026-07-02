@@ -5,7 +5,7 @@ node_modules/
 .env
 
 # Generated reports
-excel_reports/*.xlsx
+excel_reports/
 
 # Logs
 logs/
