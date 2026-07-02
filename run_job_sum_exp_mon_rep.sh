@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Thời gian chạy: 03:00 AM - new_1
+# Thời gian chạy: 5:03 AM - HKO 0629 Done Finance: SUMMARY EXPORT MONTHLY REPORT
 
 cd /home/it/mail-report-app
 
