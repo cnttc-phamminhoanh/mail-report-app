@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Thời gian chạy: 03:00 AM - <tên job>
+# Thời gian chạy: 6:01 AM - HKO Pur: Late Payment Request(Purchasing)
 
 cd /home/it/mail-report-app
 
