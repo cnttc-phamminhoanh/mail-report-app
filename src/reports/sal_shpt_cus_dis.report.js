@@ -51,4 +51,7 @@ module.exports = `
       ) - o1.def06
     ) > 0
   ORDER BY o1.sheet_date DESC
+
+
 `
+
