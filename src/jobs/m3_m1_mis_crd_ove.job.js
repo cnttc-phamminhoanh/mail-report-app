@@ -1,4 +1,4 @@
-const query = require("../reports/m3_m1_mis_crd_over.report")
+const query = require("../reports/m3_m1_mis_crd_ove.report")
 const { run } = require("../services/report-runner.service");
 
 async function execute() {
