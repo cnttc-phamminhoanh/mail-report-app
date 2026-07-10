@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:sal_shpt_cus_dis": "node src/scripts/run-job.js sal_shpt_cus_dis>> logs/sal_shpt_cus_dis.log 2>&1",
+    "dev:late_pay_req_pur": "node src/scripts/run-job.js late_pay_req_pur>> logs/late_pay_req_pur.log 2>&1",
     "dev:carter_miss_po1_45_days": "node src/scripts/run-job.js carter_miss_po1_45_days>> logs/carter_miss_po1_45_days.log 2>&1"
   },
   "keywords": [],
