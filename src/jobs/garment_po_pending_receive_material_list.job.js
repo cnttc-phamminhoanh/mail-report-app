@@ -1,4 +1,4 @@
-const query = require("../reports/garment_po_pending_receive_materials_list.reports")
+const query = require("../reports/garment_po_pending_receive_materials_list.report")
 const { run } = require("../services/report-runner.service");
 
 async function execute() {
