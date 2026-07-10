@@ -4,9 +4,9 @@ module.exports =
 
 SELECT 
 	'GI' AS [Acc],
-	case when left(po2.goods_no,2)='M1' THEN '��װ����(Main material (Fabric)' 
-     when left(po2.goods_no,2)='M2' THEN '��װ����(Sewing material)' 
-	 when left(po2.goods_no,2)='M3' THEN '��װ����(Packaging material)'
+	case when left(po2.goods_no,2)='M1' THEN N'Main material (Fabric)' 
+     when left(po2.goods_no,2)='M2' THEN N'Sewing material' 
+	 when left(po2.goods_no,2)='M3' THEN N'Packaging material'
 	end as [Catogery],
 	po1.create_user as [User No.],
 	x.user_name as [User Name],
@@ -57,7 +57,7 @@ WHERE
 	po1.sheet_sta = '1' 
 	AND po1.close_sw = '0' 
 	AND po2.close_sw = '0'
-	AND po2.goods_no <> 'M164000100001'  -- ���ӷ�
+	AND po2.goods_no <> 'M164000100001'  
 	AND LEFT(po2.goods_no, 2) IN ('M1', 'M2', 'M3') 
 	AND DATEDIFF(DAY, ISNULL(del.del_date, po2.del_date), GETDATE()) >= -3
 	and po1.sheet_date>='2023-01-01'
@@ -90,9 +90,9 @@ union all
 
 SELECT 
 	'GC' AS [Acc],
-	case when left(po2.goods_no,2)='M1' THEN '��װ����(Main material (Fabric)' 
-     when left(po2.goods_no,2)='M2' THEN '��װ����(Sewing material)' 
-	 when left(po2.goods_no,2)='M3' THEN '��װ����(Packaging material)'
+	case when left(po2.goods_no,2)='M1' THEN N'Main material (Fabric)' 
+     when left(po2.goods_no,2)='M2' THEN N'Sewing material'  
+	 when left(po2.goods_no,2)='M3' THEN N'Packaging material'
 	end as [Catogery],
 	po1.create_user as [User No.],
 	x.user_name as [User Name],
@@ -143,7 +143,7 @@ WHERE
 	po1.sheet_sta = '1' 
 	AND po1.close_sw = '0' 
 	AND po2.close_sw = '0'
-	AND po2.goods_no <> 'M164000100001'  -- ���ӷ�
+	AND po2.goods_no <> 'M164000100001'  
 	AND LEFT(po2.goods_no, 2) IN ('M1', 'M2', 'M3') 
 	AND DATEDIFF(DAY, ISNULL(del.del_date, po2.del_date), GETDATE()) >= -3
 	and po1.sheet_date>='2023-01-01'
