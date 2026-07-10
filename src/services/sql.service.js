@@ -16,5 +16,3 @@ async function getPool() {
 module.exports = {
   getPool
 }
-
-
