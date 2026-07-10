@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:sal_shpt_cus_dis": "node src/scripts/run-job.js sal_shpt_cus_dis>> logs/sal_shpt_cus_dis.log 2>&1"
+    "dev:sal_shpt_cus_dis": "node src/scripts/run-job.js sal_shpt_cus_dis>> logs/sal_shpt_cus_dis.log 2>&1",
+    "dev:m3_m1_mis_crd_over": "node src/scripts/run-job.js m3_m1_mis_crd_over>> logs/m3_m1_mis_crd_over.log 2>&1"
   },
   "keywords": [],
   "author": "",
