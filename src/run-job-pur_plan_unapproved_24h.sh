@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Thời gian chạy: 03:00 AM - pur_plan_unapproved_24h
-# Note 5:00 HKO PMC
+# Note 5:00 HKO PMC --PR n
 
 cd /home/it/mail-report-app
 
