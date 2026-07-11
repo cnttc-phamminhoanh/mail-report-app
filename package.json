@@ -14,6 +14,7 @@
     "dev:garment_po_pending_receive_material_list": "node src/scripts/run-job.js garment_po_pending_receive_material_list >> logs/garment_po_pending_receive_material_list.log 2>&1",
     "dev:pur_plan_unapproved_24h": "node src/scripts/run-job.js pur_plan_unapproved_24h >> logs/pur_plan_unapproved_24h.log 2>&1",
     "dev:sal_order_pending_mps_72h": "node src/scripts/run-job.js sal_order_pending_mps_72h >> logs/sal_order_pending_mps_72h.log 2>&1",
+    "dev:toys_miss_po1": "node src/scripts/run-job.js toys_miss_po1>> logs/toys_miss_po1.log 2>&1",
     "dev:mrp_pl_doesnot_pch_pl": "node src/scripts/run-job.js mrp_pl_doesnot_pch_pl>> logs/mrp_pl_doesnot_pch_pl.log 2>&1",
     "dev:shipping_weekly": "node src/scripts/run-job.js shipping_weekly >> logs/shipping_weekly.log 2>&1",
     "dev:haddad_miss_po1": "node src/scripts/run-job-haddad_miss_po1 >> logs/haddad_miss_po1.log 2>&1"

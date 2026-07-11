@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Thời gian chạy: 03:00 AM - sal_shpt_cus_dis
+# Thời gian chạy: 03:20 AM - toys_miss_po1
 
 cd /home/it/mail-report-app
 
