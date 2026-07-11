@@ -36,6 +36,7 @@ jobs:
           chmod +x run-job-garment_po_pending_receive_material_list.sh
           chmod +x run-job-pur_plan_unapproved_24h.sh
           chmod +x run-job-sal_order_pending_mps_72h.sh
+          chmod +x run-job-haddad_miss_po1.sh
           chmod +x run-job-mrp_pl_doesnot_pch_pl.sh
           chmod +x run-job-shipping_weekly.sh
 
