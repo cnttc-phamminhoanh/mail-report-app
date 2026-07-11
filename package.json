@@ -11,6 +11,7 @@
     "dev:carter_miss_po1_45_days": "node src/scripts/run-job.js carter_miss_po1_45_days >> logs/carter_miss_po1_45_days.log 2>&1",
     "dev:m3_m1_mis_crd_ove": "node src/scripts/run-job.js m3_m1_mis_crd_ove >> logs/m3_m1_mis_crd_ove.log 2>&1",
     "dev:garment_po_pending_receive_material_list": "node src/scripts/run-job.js garment_po_pending_receive_material_list >> logs/garment_po_pending_receive_material_list.log 2>&1",
+    "dev:pur_plan_unapproved_24h": "node src/scripts/run-job.js pur_plan_unapproved_24h >> logs/pur_plan_unapproved_24h.log 2>&1",
     "dev:sal_order_pending_mps_72h": "node src/scripts/run-job.js sal_order_pending_mps_72h >> logs/sal_order_pending_mps_72h.log 2>&1"
   },
   "keywords": [],
