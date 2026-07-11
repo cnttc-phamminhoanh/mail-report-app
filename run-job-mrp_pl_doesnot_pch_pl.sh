@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Thời gian chạy: 03:00 AM - sal_shpt_cus_dis
+# Thời gian chạy: 2:02 AM - mrp_pl_doesnot_pch_pl
 
 cd /home/it/mail-report-app
 
