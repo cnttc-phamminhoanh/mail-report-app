@@ -25,7 +25,4 @@ and i.sheet_type <> 'PTGI'
 and o.sheet_date> '2025-05-31'
 and o.sheet_no <> 'POV251107019'
 order by [Status] desc
-
-
-
 `
