@@ -28,7 +28,6 @@ jobs:
           git reset --hard origin/master
 
           echo "=== Grant execute permissions to the file ==="
-          chmod +x run-job-sal_shpt_cus_dis.sh
           chmod +x run-job-pur_plan_unapproved_24h.sh
 
           echo "=== Install Dependencies ==="
