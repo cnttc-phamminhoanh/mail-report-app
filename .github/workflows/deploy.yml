@@ -36,7 +36,8 @@ jobs:
           chmod +x run-job-garment_po_pending_receive_material_list.sh
           chmod +x run-job-pur_plan_unapproved_24h.sh
           chmod +x run-job-sal_order_pending_mps_72h.sh
-          
+          chmod +x run-job-toys_miss_po1.sh
+
           echo "=== Install Dependencies ==="
           /home/it/.nvm/versions/node/v22.18.0/bin/npm ci
 
