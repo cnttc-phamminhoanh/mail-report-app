@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Thời gian chạy: 03:00 AM - sal_shpt_cus_dis
+# Thời gian chạy: 7:00 AM - shipping_weekly
 
 cd /home/it/mail-report-app
 
