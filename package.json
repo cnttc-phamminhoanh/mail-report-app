@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "dev:sal_shpt_cus_dis": "node src/scripts/run-job.js sal_shpt_cus_dis >> logs/sal_shpt_cus_dis.log 2>&1",
     "dev:sum_exp_mon_rep" : "node src/scripts/run-job.js sum_exp_mon_rep >> logs/sum_exp_mon_rep.log 2>&1",
     "dev:late_pay_req_pur": "node src/scripts/run-job.js late_pay_req_pur >> logs/late_pay_req_pur.log 2>&1",
@@ -12,7 +13,9 @@
     "dev:m3_m1_mis_crd_ove": "node src/scripts/run-job.js m3_m1_mis_crd_ove >> logs/m3_m1_mis_crd_ove.log 2>&1",
     "dev:garment_po_pending_receive_material_list": "node src/scripts/run-job.js garment_po_pending_receive_material_list >> logs/garment_po_pending_receive_material_list.log 2>&1",
     "dev:pur_plan_unapproved_24h": "node src/scripts/run-job.js pur_plan_unapproved_24h >> logs/pur_plan_unapproved_24h.log 2>&1",
-    "dev:sal_order_pending_mps_72h": "node src/scripts/run-job.js sal_order_pending_mps_72h >> logs/sal_order_pending_mps_72h.log 2>&1"
+    "dev:sal_order_pending_mps_72h": "node src/scripts/run-job.js sal_order_pending_mps_72h >> logs/sal_order_pending_mps_72h.log 2>&1",
+    "dev:shipping_weekly": "node src/scripts/run-job.js shipping_weekly >> logs/shipping_weekly.log 2>&1"
+
   },
   "keywords": [],
   "author": "",
@@ -23,5 +26,8 @@
     "exceljs": "^4.4.0",
     "mssql": "^12.5.5",
     "nodemailer": "^8.0.10"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
   }
 }
