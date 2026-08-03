@@ -23,7 +23,7 @@ SELECT
     out_pri AS [UNIT PRICE],
     out_amt AS [SHIPPED AMOUNT (USD)],
     CONCAT(CAST(ratio_qty * 100 AS INT), '%') AS [ACTUAL SHIPPED (%)],
-    remain_qty AS [UNSHIPPED PO QTY]
+    remain_qty AS [UNSHIPPED PO QTY],
     pri_dis AS [DISCOUNT GI],
     sheet_pri1 AS [UNIT PRICE GI],
     
