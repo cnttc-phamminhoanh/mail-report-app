@@ -17,9 +17,7 @@ module.exports = `
   LEFT JOIN mrp_mps2 s WITH(NOLOCK) ON s.ord_no = o.sheet_no AND s.ord_id = o.sheet_id
   LEFT JOIN mrp_mps1 s1 WITH(NOLOCK) ON s1.sheet_no = s.sheet_no
   INNER JOIN bom_config_dif2 b WITH(NOLOCK) ON b.parent_no = o.goods_no AND b.child_no LIKE 'M3%'
-  INNER JOIN bom_config_dif1 b1 WITH(NOLOCK) ON b.sheet_no = b1.sheet_no AND b1.dif_code = o.dif_code
   LEFT JOIN mrp_mrp2 r WITH(NOLOCK) ON r.ord_no = o.sheet_no AND r.ord_id = o.sheet_id AND r.goods_no = b.child_no
-  LEFT JOIN bas_goods g WITH(NOLOCK) ON g.goods_no = o.goods_no
   LEFT JOIN bas_goods g2 WITH(NOLOCK) ON g2.goods_no = b.child_no
   LEFT JOIN bas_cust c WITH(NOLOCK) ON c.cust_no = o1.cust_no1
   LEFT JOIN bas_emp e WITH(NOLOCK) ON e.emp_no = s1.create_user
