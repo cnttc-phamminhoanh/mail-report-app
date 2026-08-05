@@ -9,6 +9,11 @@ const { formatDateCN } = require("../utils/date.util")
 async function run({ query, reportTitle, sheetName, mailTo }) {
   const data = await executeQuery(query);
 
+  if (!data || data.length === 0) {
+    console.log(`[${new Date().toISOString()}] [REPORT] No data found. Skip generating Excel and sending email.`);
+    return;
+  }
+
   const filePath = createReportFile(reportTitle);
 
   await generateExcel(data, filePath, {
