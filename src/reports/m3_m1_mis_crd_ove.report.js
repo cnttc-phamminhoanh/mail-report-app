@@ -5,7 +5,7 @@ module.exports = `
     o.sheet_no AS [SO No.],
     o.sheet_id AS [SO ID],
     o.goods_no AS [Finish Goods],
-    o.dif_code AS [Style],
+    o1.def04 AS [Style],
     b.child_no AS [M3 (BOM)],
     g2.goods_name AS [M3 Name],
     e.emp_name AS [Creator],
