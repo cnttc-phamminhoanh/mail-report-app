@@ -23,9 +23,11 @@ module.exports = `
   LEFT JOIN bas_emp e WITH(NOLOCK) ON e.emp_no = s1.create_user
   WHERE
     r.goods_no IS NULL
+    AND s1.sheet_no is null
     AND o.close_sw = 0
     AND o1.close_sw = 0
     AND DATEDIFF(day, GETDATE(), ISNULL(o.del_date, o.def25)) <= 50
     AND ISNULL(o.del_date, o.def25) >= '2025-06-01'
     AND CHARINDEX('COMMON', g2.goods_name) = 0;
+
 `
