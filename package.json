@@ -19,7 +19,9 @@
     "dev:mrp_pl_doesnot_pch_pl": "node src/scripts/run-job.js mrp_pl_doesnot_pch_pl>> logs/mrp_pl_doesnot_pch_pl.log 2>&1",
     "dev:shipping_weekly": "node src/scripts/run-job.js shipping_weekly >> logs/shipping_weekly.log 2>&1",
     "dev:haddad_miss_po1": "node src/scripts/run-job-haddad_miss_po1 >> logs/haddad_miss_po1.log 2>&1",
-    "dev:po_undelivered_3days": "node src/scripts/run-job.js po_undelivered_3days >> logs/po_undelivered_3days.log 2>&1"
+    "dev:po_undelivered_3days": "node src/scripts/run-job.js po_undelivered_3days >> logs/po_undelivered_3days.log 2>&1",
+    "dev:so_cancel_24h_po_not_cancel": "node src/scripts/run-job.js so_cancel_24h_po_not_cancel >> logs/so_cancel_24h_po_not_cancel.log 2>&1"
+
   },
   "keywords": [],
   "author": "",

@@ -41,6 +41,7 @@ jobs:
           chmod +x run-job-haddad_miss_po1.sh
           chmod +x run-job-mrp_pl_doesnot_pch_pl.sh
           chmod +x run-job-shipping_weekly.sh
+          chmod +x run-job-so_cancel_24h_po_not_cancel.sh
           chmod +x run-job-po_undelivered_3days.sh
           echo "=== Install Dependencies ==="
           /home/it/.nvm/versions/node/v22.18.0/bin/npm ci
