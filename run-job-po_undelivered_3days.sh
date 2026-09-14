@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Thời gian chạy: 5:03 AM - HKO 0629 Done Finance: SUMMARY EXPORT MONTHLY REPORT
+# Thời gian chạy: 9:00 AM Toy Handbag PO — Undelivered Details (Delivery Date < 3 Days)
 
 cd /home/it/mail-report-app
 
